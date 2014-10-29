@@ -7,9 +7,10 @@ RUN apt-get -qq update && \
 	apt-get -qqy install deb.torproject.org-keyring && \
 	apt-get -qqy install tor
 	
+RUN adduser --disabled-password --gecos '' tor
 
 COPY torrc /etc/tor/torrc
 
 EXPOSE 9001
 
-CMD ["/usr/bin/tor"]
+CMD su -m r -c /usr/bin/tor
