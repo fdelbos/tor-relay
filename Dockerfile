@@ -13,4 +13,4 @@ COPY torrc /etc/tor/torrc
 
 EXPOSE 9001
 
-CMD su -m r -c /usr/bin/tor
+CMD su -m tor -c /usr/bin/tor
