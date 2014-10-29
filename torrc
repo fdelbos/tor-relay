@@ -1,0 +1,8 @@
+ORPort 9001
+
+Nickname somecoolname
+
+RelayBandwidthRate 500 KBytes
+RelayBandwidthBurst 1000 KBytes
+
+ExitPolicy reject *:* # no exits allowed
